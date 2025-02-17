@@ -1,0 +1,126 @@
+/* Resetowanie domyślnych stylów dla wszystkich przeglądarek */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styl dla całego ciała aplikacji */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d4e9f8; /* Jasnoniebieskie tło */
+  color: #4b0082; /* Fioletowy kolor tekstu */
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Podstawowe style dla linków */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Nawigacja */
+nav {
+  height: 70px;
+  background-color: #7d57ef; /* Granatowa nawigacja */
+  padding: 0.75rem 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Header globalny */
+header {
+  text-align: center;
+  padding: 1rem 0;
+  color: #5a2a83; /* Fioletowy nagłówek */
+  font-size: 2rem;
+  border-bottom: 2px solid #8a4b9e; /* Ciemniejszy fiolet */
+}
+
+/* Formularze */
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 1px solid #d1c4e9; /* Jasny fioletowy obramowanie */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Styl pól input i textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #a8c4d2; /* Jasny niebieski */
+  border-radius: 4px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #2a5d84; /* Granatowy na focus */
+  box-shadow: 0 0 5px rgba(42, 93, 132, 0.3);
+  outline: none;
+}
+
+/* Styl przycisków */
+button {
+  background-color: #2a5d84; /* Granatowy przycisk */
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #1e4f72; /* Ciemniejszy granatowy przy hover */
+}
+
+/* Podstawowe style dla tekstu */
+h1,
+h2,
+h3 {
+  margin: 0.5rem 0;
+  color: #5a2a83; /* Fioletowy tytuł */
+}
+
+/* Ogólne style dla kontenerów */
+.container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  header {
+    font-size: 1.5rem;
+  }
+
+  form {
+    padding: 0.5rem;
+  }
+}
