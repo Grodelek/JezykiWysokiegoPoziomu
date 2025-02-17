@@ -1,0 +1,210 @@
+/* General reset */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #4b4b4b; /* Dark gray */
+}
+
+div {
+  background-color: #91c9ff; /* Light gray */
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+body {
+  background-color: #55738f; /* Light background */
+  line-height: 1.6;
+}
+
+p {
+  padding: 10px;
+  font-size: 28px;
+  line-height: 1.5;
+  color: #4a4a4a; /* Darker gray */
+}
+
+/* Navigation bar */
+nav {
+  background-color: #00796b; /* Teal */
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #ff7043; /* Soft orange */
+}
+
+/* Main container */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+  color: #00796b; /* Teal */
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Lists */
+.lab9-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lab9-list li {
+  margin: 10px 0;
+}
+
+.lab9-list a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #00796b; /* Teal */
+  padding: 12px 24px;
+  background-color: #e0f2f1; /* Light teal background */
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lab9-list a:hover {
+  background-color: #00796b; /* Teal */
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Forms */
+form {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 12px;
+  background-color: #00796b; /* Teal */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #004d40; /* Darker teal */
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Highlight interactive elements */
+.section {
+  margin-bottom: 20px;
+}
+
+.section:hover {
+  background-color: #f1f1f1;
+}
+
+/* Images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+/* 404 Page */
+.error {
+  text-align: center;
+  color: #d32f2f; /* Red */
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* JSON and file data */
+pre {
+  background: #fafafa; /* Very light gray */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  main {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  div {
+    width: 90%;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
