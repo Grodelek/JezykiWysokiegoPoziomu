@@ -1,0 +1,31 @@
+.meal {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.meal img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.meal h2 {
+    margin-top: 0;
+}
+
+.meal p {
+    color: #555;
+}
+
+.meal a {
+    text-decoration: none;
+    color: #f34900;
+}
+
+.meal a:hover {
+    text-decoration: underline;
+}

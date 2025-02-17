@@ -1,0 +1,101 @@
+/* meals-page.module.css */
+
+/* Styl głównej kontenerki */
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    background-color: #f4f4f9;  /* Jasne tło */
+    min-height: 100vh;
+}
+
+/* Nagłówek */
+.heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Lista posiłków */
+.mealList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Pojedynczy element posiłku */
+.mealItem {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mealItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Link do posiłku */
+.mealLink {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+/* Zawartość posiłku */
+.mealContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Tytuł posiłku */
+.mealTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Obrazek posiłku */
+.mealImage {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Podsumowanie posiłku */
+.summary {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+/* Stylowanie dla mobilnych urządzeń */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .mealList {
+        grid-template-columns: 1fr;
+    }
+
+    .mealTitle {
+        font-size: 1.5rem;
+    }
+}
